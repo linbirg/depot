@@ -1,0 +1,104 @@
+/* styles for main page */
+body{
+    font-family: "微软雅黑";
+    margin-top:0px;
+}
+
+#top {
+    background: #555555;
+    padding: 5px 0px 5px 30px;
+    color: #fff;
+    text-indent: 20px;
+}
+
+#banner{
+    background: #eeeeee;
+    padding-top: 1px;
+    padding-bottom: 0px;
+    padding-left: 40px;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    font: small-caps 30px/30px "Times New Roman", serif;
+    color: #555555;
+    text-align: left;
+}
+
+#banner h1{
+    height: 10px;
+    line-height: 10px;
+}
+
+#banner h1 a {
+    font-size:30px;
+    text-decoration: none;
+}
+
+#banner h1 a:hover{
+    color: #000000;
+    display:inline;
+    background:#eeeeee;
+}
+
+#menu{
+    padding: 0 0 0 8px;
+    margin: 1px;
+    list-style:none;
+    height:35px;
+    text-indent: 10px;
+    font-family: Arial;
+    font-size: 14px;
+    width: auto;
+    background: #003399;
+    border-bottom-width:2px;
+}
+
+#menu li{
+    float :left;
+    text-align: center;
+}
+
+#menu li a{
+    display:block;
+    line-height:35px;
+    color: #00cccc;
+    text-decoration:none;
+    padding:0 0 0 14px;
+}
+
+#product_list table {
+        border-collapse: collapse;
+}
+
+#product_list table tr td {
+        padding: 5px;
+        vertical-align: top;
+}
+
+#product_list .list_image {
+  width:        60px;
+  height:       70px;
+}
+
+#product_list .list_description {
+  width:        60%;
+}
+
+#product_list .list_description dl {
+        margin: 0;
+}
+
+#product_list .list_description dt {
+	color:        #244;
+	font-weight:  bold;
+	font-size:    larger;
+}
+
+#product_list .list_description dd {
+        margin: 0;
+}
+
+#product_list .list_actions {
+  font-size:    x-small;
+  text-align:   right;
+  padding-left: 1em;
+}

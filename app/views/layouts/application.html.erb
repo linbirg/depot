@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>linbirg's blog</title>
+  <%= stylesheet_link_tag "depot", :media => "all" %>
+  <%= stylesheet_link_tag "scaffold" %>
+  <%= javascript_include_tag :defaults %>
+  <%= csrf_meta_tag %>
+</head>
+<body id="store">
+<div id="top">博采众长，精于一计。</div>
+<div id="banner">
+  <h1>
+    <a href="http://localhost:3000/products" >linbirg's blog</a>
+  </h1>
+</div>
+<ul id="menu">
+    <li><a href="">Home</a></li>
+    <li><a href="">Login</a></li>
+    <li><a href="">Logout</a></li>
+</ul>
+
+<%= yield %>
+
+</body>
+</html>
