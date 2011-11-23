@@ -4,6 +4,7 @@ body, p, ol, ul, td {
   font-family: verdana, arial, helvetica, sans-serif;
   font-size:   13px;
   line-height: 18px;
+  list-style:none;
 }
 
 pre {
@@ -54,3 +55,23 @@ div.field, div.actions {
   font-size: 12px;
   list-style: square;
 }
+
+*{margin:0;padding:0;}
+body{margin-top:80px;font-size:12px;font-family:"微软雅黑",arial,sans-serif;color:#9C9C91;background:#fff;}
+a {color:#333;text-decoration: none;}
+a:hover   {color:#f00;}
+.wrap {width:720px;background:#f2f2f2;margin:0 auto;}
+ul.works {list-style:none;margin:0;padding:0;}
+ul.works li   {float:left;display: inline;margin:0 20px 20px 0;width:158px;height:150px;}
+ul.works li a {text-decoration: none;display:block;width:158px;height:150px;background:#fff;}
+ul.works li a img {border:0;}
+ul.works li a .imgthumb {position:relative;background:#EFEFEF;}
+ul.works li a .imgthumb span.thumb_shadow_right {position:relative;top:-3px;left:-3px;display:block;border:1px solid #BCBEC0;background:#FFF;padding:3px;text-align:center;}
+ul.works li a .intro   {display:none;margin-top:5px;height:80px;color:#9C9C91;line-height:1.5;}
+ul.works li a .intro p {border-bottom:1px solid #DEDEDD;overflow:hidden;}
+ul.works li a:hover {position:absolute;z-index:5;margin:-60px -6px -220px -30px;width:210px;height:273px;background:#CFE798;cursor:pointer;}
+ul.works li a:hover .shadow {position:relative;display:block;padding:4px;}
+ul.works li a:hover .box    {border:1px solid #9FCF30;background:#fff;padding:15px 10px 15px 15px;}
+ul.works li a:hover .intro  {display:block;}
+
+

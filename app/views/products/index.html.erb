@@ -1,30 +1,41 @@
 
- <div id="product_list" >
-    <h1>Listing products</h1>
-   <table>
-     <% @products.each do |product| %>
-     <tr class="<%= cycle('list_line_odd', 'list_line_even') %>">
-         <td>
-           <%= image_tag(product.image_url, :class => 'list_image') %>
-         </td>
-         <td class="list_description">
-           <dl>
-             <dt><%= product.title %></dt>
-             <dd><%= truncate(strip_tags(product.description), :length => 80) %></dd>
-           </dl>
-         </td>
-         <td class="list_actions">
-           <%= link_to 'Show', product %><br/>
-           <%= link_to 'Edit', edit_product_path(product) %><br/>
-           <%= link_to 'Destroy', product,
-               :confirm => 'Are you sure?',
-               :method => :delete %>
-         </td>
-     </tr>
-     <% end %>
-   </table>
+ <div class="wrap" >
+   <div class="floorBox" id="womenBox">
+     <div class="hd">
+       <a href="#"><h3 class="subTit fl_lf">潮流女装</h3></a>
+       <ul class="subNav fl_rt none_style inline">
+         <li class="fl_lf">特卖</li>
+         <li class="fl_rt lf_pad">潮流</li>
+       </ul>
+       <div class="clear"></div>
+     </div>
+     <%= render :partial => "floor_body", :object => @products %>
+   </div>
+   <div class="floorBox" id="menBox">
+     <div class="hd">
+       <h3 class="subTit fl_lf">潮流男装</h3>
+       <ul class="subNav none_style fl_rt">
+         <li class="fl_lf inline">特卖</li>
+         <li class="fl_rt lf_pad inline">潮流</li>
+       </ul>
+       <div class="clear solid_blue"></div>
+     </div>
+     <%= render :partial => "floor_body", :object => @products %>
+   </div>
+   <div class="floorBox" id="childBox">
+     <div class="hd">
+       <h3 class="subTit fl_lf">童装</h3>
+       <ul class="subNav none_style fl_rt">
+         <li class="fl_lf inline">特卖</li>
+         <li class="fl_rt lf_pad inline">潮流</li>
+       </ul>
+       <div class="clear solid_blue"></div>
+     </div>
+     <%= render :partial => "floor_body", :object => @products %>
+   </div>
  </div>
-
+ </div>
+<div class="pad solid_red"></div>
 <br />
 
-<%= link_to 'New Product', new_product_path %>
+<!--%= link_to 'New Product', new_product_path %-->
