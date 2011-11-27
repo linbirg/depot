@@ -1,0 +1,16 @@
+<div class="bd">
+   <% @products.each do |product| %>
+     <li class="item">
+       <div class="shadow">
+         <div class="box">
+           <a href="#">
+             <div class="imgthumb">
+               <span class="thumb_shadow_right"><%= image_tag(product.image_url) %></span>
+             </div>
+           </a>
+         </div>
+       </div>
+     </li>
+   <% end %>
+   <div class="clear solid_blue"></div>
+</div>
